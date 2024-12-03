@@ -1,0 +1,65 @@
+<div class="my-3">
+  <h4>Take</h4>
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <table class="table" *ngIf="userData !== null">
+        <tbody>
+          <tr>
+            <th>Id</th>
+            <td>{{ userData.id }}</td>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <td>{{ userData.name }}</td>
+          </tr>
+          <tr>
+            <th>Model Year</th>
+            <td>{{ userData.data.year }}</td>
+          </tr>
+          <tr>
+            <th>Model Price</th>
+            <td>{{ userData.data.price }}</td>
+          </tr>
+          <tr>
+            <th>Model CPU</th>
+            <td>{{ userData.data["CPU model"] }}</td>
+          </tr>
+          <tr>
+            <th>Model Hard Disk</th>
+            <td>{{ userData.data["Hard disk size"] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary" (click)="fetchDetails()" type="button">
+  <span
+    *ngIf="fetching"
+    class="spinner-border spinner-border-sm"
+    role="status"
+    aria-hidden="true"
+  >
+  </span>
+  {{ fetching ? "Fetching...." : "Fetch Details" }}
+</button>
+<br /><br />
+<p>
+  Status :
+  <strong
+    [ngClass]="{
+      'text-success': DataStatus === 'Data Fetched',
+      'text-danger': DataStatus === 'Data Fetching Error'
+    }"
+    >{{ DataStatus }}</strong
+  >
+  <span
+    *ngIf="fetching"
+    class="spinner-grow spinner-grow-sm text-warning"
+    role="status"
+  >
+    <!-- <span class="sr-only">Loading....</span> -->
+  </span>
+</p>

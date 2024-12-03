@@ -1,0 +1,38 @@
+<div class="my-3">
+  <h4>Pluck</h4>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Example - 01</strong>
+      <hr />
+      <p class="border rounded p-3 bg-light">
+        <strong>Pluck : </strong> by property
+      </p>
+      <br />
+      <table>
+        <tr>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of data">
+          <td>{{ item }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <strong>Example - 01</strong>
+      <hr />
+      <p class="border rounded p-3 bg-light">
+        <strong>Pluck : </strong> job > Title
+      </p>
+      <br />
+      <table>
+        <tr>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of data1">
+          <td>{{ item }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

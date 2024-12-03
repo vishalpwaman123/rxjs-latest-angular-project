@@ -1,0 +1,26 @@
+<div class="my-3">
+  <h2>Custom Observable</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Example - 01 (Manual)</strong>
+      <hr />
+      <ul
+        [ngClass]="
+          techStatus == 'complete'
+            ? 'complete'
+            : techStatus == 'error'
+            ? 'error'
+            : ''
+        "
+        class="techList"
+        id="elContainer1"
+      ></ul>
+    </div>
+    <div class="col-md-6">
+      <strong>Example - 02 (Custom Interval Observable)</strong>
+      <hr />
+      <ul class="techList" id="elContainer2"></ul>
+    </div>
+  </div>
+</div>

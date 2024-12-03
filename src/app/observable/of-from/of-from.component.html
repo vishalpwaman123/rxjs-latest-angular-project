@@ -1,0 +1,79 @@
+<div class="my-3">
+  <h4>Of and From</h4>
+  <br />
+  <strong>Example - 01 ( OF )</strong>
+  <hr />
+  <div class="row">
+    <div class="col-md-3">
+      <p class="border rounded p-3 bg-light">
+        <strong>Data : </strong> of('Vishal', 'Prabhakar', 'Waman')
+      </p>
+      <hr />
+      <ul id="elContainer1"></ul>
+    </div>
+    <div class="col-md-3">
+      <p class="border rounded p-3 bg-light">
+        <strong>Data : </strong>of(1,2,'string')
+      </p>
+      <hr />
+      <ul id="elContainer11"></ul>
+    </div>
+    <div class="col-md-3">
+      <p class="border rounded p-3 bg-light">
+        <strong>Data : </strong> of(&#123; fName:'Vishal', mName:'Prabhakar',
+        lName:'Waman' &#125;)
+      </p>
+      <hr />
+      <ul id="elContainer2">
+        <li><strong>First Name :</strong> {{ object1.fName }}</li>
+        <li><strong>Middle Name :</strong> {{ object1.mName }}</li>
+        <li><strong>Last Name :</strong> {{ object1.lName }}</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="border rounded p-3 bg-light">
+        <strong>Data : </strong> of([&#123;a:'A', b:'B',
+        c:'C'&#125;,&#123;a:'A', b:'B', c:'C'&#125;])
+      </p>
+      <ul id="elContainer22"></ul>
+    </div>
+  </div>
+  <br />
+  <strong>Example - 02 ( From )</strong>
+  <hr />
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Array</strong>
+      <p class="border rounded p-3 mt-3 bg-light">
+        <strong>Data : </strong>from(['Vishal', 'Prabhakar', 'Waman'])
+      </p>
+      <hr />
+      <ul id="elContainer3"></ul>
+    </div>
+    <div class="col-md-3">
+      <strong>Promise</strong>
+      <p class="border rounded p-3 mt-3 bg-light">
+        <strong>Data : </strong>Promise to Observable
+      </p>
+      <hr />
+      <ul id="elContainer4"></ul>
+    </div>
+    <div class="col-md-3">
+      <strong>String to Observable</strong>
+      <p class="border rounded p-3 mt-3 bg-light">
+        <strong>Data : </strong>from('Welcome To V Coder')
+      </p>
+      <hr />
+      <ul id="elContainer5"></ul>
+    </div>
+    <div class="col-md-3">
+      <strong>Array Of Object To Observable</strong>
+      <p class="border rounded p-3 mt-3 bg-light">
+        <strong>Data : </strong>from([&#123; a:'A1', b:'B1', c:'C1' &#125;
+        &#123; a:'A2', b:'B2', c:'C2' &#125;])
+      </p>
+      <hr />
+      <ul id="elContainer55"></ul>
+    </div>
+  </div>
+</div>

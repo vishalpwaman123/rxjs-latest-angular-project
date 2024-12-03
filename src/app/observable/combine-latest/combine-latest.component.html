@@ -1,0 +1,56 @@
+<div class="my-3">
+  <h4>CombineLatest & WithLatestFrom</h4>
+  <br />
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <h5>Name</h5>
+      <hr />
+      <select class="form-control" #name>
+        <option *ngFor="let item of nameList" value="{{ item }}">
+          {{ item === "" ? "Select Name" : item }}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <h5>Color</h5>
+      <hr />
+      <select class="form-control" #color>
+        <option *ngFor="let item of colorList" value="{{ item }}">
+          {{ item === "" ? "Select Color" : item }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <br />
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <h5>CombineLatest Result</h5>
+      <hr />
+      <div id="elContainer1">
+        <div class="wrapper">
+          <!-- <div class="red box">Vishal</div>
+          <div class="violet box">Rahul</div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h5>WithLatestFrom Result</h5>
+      <hr />
+      <div id="elContainer2"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h5>Zip</h5>
+      <hr />
+      <div id="elContainer3"></div>
+    </div>
+    <div class="col-md-4">
+      <h5>ForkJoin</h5>
+      <hr />
+      <div id="elContainer4"></div>
+    </div>
+  </div>
+</div>

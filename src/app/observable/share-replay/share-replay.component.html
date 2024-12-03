@@ -1,0 +1,68 @@
+<div class="my-3">
+  <h4>Share replay</h4>
+  <hr />
+  All Record
+  <hr />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Insertion Date</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of empArrObs | async">
+        <td>{{ item.id }}</td>
+        <td>{{ item.insertionDate }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <hr />
+  1 to 3 Record
+  <hr />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Insertion Date</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of empArrObs1 | async">
+        <td>{{ item.id }}</td>
+        <td>{{ item.insertionDate }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <hr />
+  4 to 7 Record
+  <hr />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Insertion Date</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of empArrObs2 | async">
+        <td>{{ item.id }}</td>
+        <td>{{ item.insertionDate }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

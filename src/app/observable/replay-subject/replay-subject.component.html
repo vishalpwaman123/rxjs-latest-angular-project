@@ -1,0 +1,63 @@
+<div class="my-3">
+  <h4>Relay Subject</h4>
+  <hr />
+  <div class="row">
+    <div class="col">
+      <h5>Add Video</h5>
+    </div>
+    <div class="col">
+      <button class="float-end btn btn-warning" (click)="handleToggle()">
+        Toggle
+      </button>
+    </div>
+  </div>
+  <hr />
+  <div class="row justify-content-center" *ngIf="IsToggle">
+    <div class="col-md-4">
+      <input type="text" class="form-control" #myInput />
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-primary mx-2" (click)="handleAdd(myInput)">
+        Submit
+      </button>
+    </div>
+  </div>
+  <hr *ngIf="IsToggle" />
+  <div class="row">
+    <div class="col-md-4">
+      <strong>User 01</strong>
+      <hr />
+      <ul *ngFor="let item of userArr1">
+        <li>{{ item }}</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <strong>User 02</strong>
+      <hr />
+      <ul *ngFor="let item of userArr2">
+        <li>{{ item }}</li>
+      </ul>
+      <button
+        class="btn"
+        [ngClass]="User2ButtonStatus ? 'btn-danger' : 'btn-primary'"
+        (click)="handleSubscribe2Btn()"
+      >
+        {{ !User2ButtonStatus ? "Subscribe" : "Un-Subscribe" }}
+      </button>
+    </div>
+    <div class="col-md-4">
+      <strong>User 03</strong>
+      <hr />
+      <ul *ngFor="let item of userArr3">
+        <li>{{ item }}</li>
+      </ul>
+      <button
+        class="btn"
+        [ngClass]="User3ButtonStatus ? 'btn-danger' : 'btn-primary'"
+        (click)="handleSubscribe3Btn()"
+      >
+        {{ !User3ButtonStatus ? "Subscribe" : "Un-Subscribe" }}
+      </button>
+    </div>
+  </div>
+</div>

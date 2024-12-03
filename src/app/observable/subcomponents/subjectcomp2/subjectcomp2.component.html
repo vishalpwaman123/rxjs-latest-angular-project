@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">Subject Comp 2</div>
+  <div class="card-body">
+    <h5 class="card-title">
+      Result 2 :
+      <span *ngIf="Result != ''" class="badge bg-secondary">
+        {{ Result }}
+      </span>
+    </h5>
+    <input type="text" class="form-control my-3" #result />
+    <button class="btn btn-primary" (click)="onChange(result)">
+      Go somewhere
+    </button>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="my-3">
+  <h4>CatchError & ThrowError</h4>
+  <div
+    *ngIf="isError"
+    class="alert alert-danger alert-dismissible fade show"
+    role="alert"
+  >
+    <strong>Error : </strong> {{ error }}
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  <hr />
+  <h5>Employee Data</h5>
+  <br />
+  <button type="button" class="btn btn-primary" (click)="getEmployeeDetail()">
+    Get Detail
+  </button>
+</div>

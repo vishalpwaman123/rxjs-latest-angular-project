@@ -1,0 +1,53 @@
+ul.techList {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.techList li {
+  border: 0.5px solid lightgray;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.226);
+}
+
+ul.techList.error li {
+  border: 0.5px solid red;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.107);
+}
+
+ul.techList.complete li {
+  border: 0.5px solid green;
+  color: green;
+  background-color: rgba(0, 128, 0, 0.183);
+}
+
+.red {
+  background-color: red;
+}
+.violet {
+  background-color: violet;
+}
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: pink;
+}
+.brown {
+  background-color: brown;
+}
+.purple {
+  background-color: purple;
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}

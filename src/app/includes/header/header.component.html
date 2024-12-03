@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-5">Observable and Promises</a>
+    <strong class="badge bg-primary" *ngIf="IsPrime">Prime member</strong>
+    <!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+      <ul class="navbar-nav me-5">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="promise"
+            >Promise</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="observable">Observable</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

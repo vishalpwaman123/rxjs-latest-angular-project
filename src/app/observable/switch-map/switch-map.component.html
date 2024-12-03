@@ -1,0 +1,72 @@
+<div class="my-3 p-5">
+  <h4>SwitchMap</h4>
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <strong> Example - 01 ( Map )</strong>
+      <hr />
+      <div class="border rounded p-3 bg-light mb-3">
+        <strong>Video : </strong>['Tech', 'Comedy', 'News']
+      </div>
+      <ul id="elContainer1"></ul>
+    </div>
+    <div class="col-md-4">
+      <strong> Example - 02 ( Map + SwitchAll )</strong>
+      <hr />
+      <div class="border rounded p-3 bg-light mb-3">
+        <strong>Video : </strong>['Tech', 'Comedy', 'News']
+      </div>
+      <ul id="elContainer2"></ul>
+    </div>
+    <div class="col-md-4">
+      <strong>Example - 03 ( SwitchMap )</strong>
+      <hr />
+      <div class="border rounded p-3 bg-light mb-3">
+        <strong>Video : </strong>['Tech', 'Comedy', 'News']
+      </div>
+      <ul id="elContainer3"></ul>
+    </div>
+  </div>
+  <br />
+  <hr />
+  <h4>Switch Map Example</h4>
+  <br />
+  <div class="row">
+    <div class="col-md-12">
+      <form #searchForm="ngForm" action="">
+        <div class="form-label">Search Video</div>
+        <input
+          type="text"
+          name="searchKeyword"
+          class="form-control"
+          required
+          ngModel
+        />
+      </form>
+    </div>
+  </div>
+  <br />
+  <hr />
+  <div class="d-flex justify-content-between">
+    <h4 class="">Search Result</h4>
+    <span class="float-end">{{ SearchCount }} Results Found</span>
+  </div>
+  <hr />
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of SearchResult">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.insertionDate }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
